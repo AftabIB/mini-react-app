@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background: #f1f5f8; */
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-attachment: fixed;
+    color: black;
+    /* filter: blur(5px 5px 5px black); */
+}
+
+.booklist {
+    display: grid;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 3rem auto;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width : 900px) {
+    .booklist {
+        grid-template-columns: repeat(3, 1fr);
+        /* align-items: start; */
+    }
+}
+
+.book {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    background: #fff;
+    border-radius: .8em;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 2px 2px 5px;
+}
+
+.book img {
+    border-radius: .5em;
+    width: 100%;
+    object-fit: cover;
+}
+
+.book h2 {
+    padding-top: 1rem;
+}
+
+.book h4 {
+    padding: 1rem;
+    color: #617d98;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.book p {
+    margin: 1rem 0 0.5 rem;
+}
